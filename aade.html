@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk AdeSayang💕</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+}
+
+/* container */
+.container {
+    padding: 20px;
+}
+
+/* menu button */
+.menu button {
+    margin: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #ff6b81;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu button:hover {
+    background: #ff4757;
+}
+
+/* content box */
+.content {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* image */
+.content img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* aktif */
+.active {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Hai Oknum AdeSayang 🫠</h1>
+    <p>Pilih yang mau ade lihat yak, bebas yg mana dluan</p>
+
+    <!-- MENU -->
+    <div class="menu">
+        <button onclick="showContent('c1')">About @AdeSayang😻</button>
+        <button onclick="showContent('c2')">Why You?🧐</button>
+        <button onclick="showContent('c3')">Tiny Story.👣</button>
+        <button onclick="showContent('c4')">Love Notes📬</button>
+	<button onclick="showContent('c5')">You in Song📟</button>
+    </div>
+
+    <!-- CONTENT 1 -->
+    <div id="c1" class="content">
+        <img src="carmen 1.jpg">
+        <p>
+            Ade tuh bener-bener jago banget ngerespon orang. Gua bisa kepikat, soalnya tiap respon dari ade nggak pernah nyudutin gua sama sekali, malah selalu bikin gua ngerasa dimengerti.
+
+Gua suka banget cara ade mikir, cara ade ngeliat sesuatu dari sudut yang beda, terus cara ade ngomong yang apa adanya tapi tetep enak didenger. Tingkah ade juga kadang sederhana, tapi justru itu yang bikin gua nyaman.
+
+Jujur aja, makin ke sini gua makin sadar… hampir semua tentang lu tuh bikin gua suka. Bukan yang berlebihan, tapi yang tulus dan bikin gua betah.
+
+        </p>
+    </div>
+
+    <!-- CONTENT 2 -->
+    <div id="c2" class="content">
+        <img src="carmen 2.jpg">
+        <p>
+            Alasan gua milih ade itu sederhana, tapi dalam. Ade yang rela nunggu gua, bahkan di saat gua belum tentu bisa kasih kepastian secepat itu. Nggak semua orang bisa kayak gitu, dan gua bener-bener hargain itu.
+
+Ade juga jago banget jaga hati, tetap setia tanpa banyak tuntutan. Dari situ gua belajar kalau perasaan yang tulus itu emang ada.
+
+Selain itu, ade bikin gua percaya lagi, bikin gua ngerasa dihargai, dan diterima apa adanya. Hal-hal kayak gitu yang akhirnya bikin gua yakin buat milih ade.
+
+        </p>
+    </div>
+
+    <!-- CONTENT 3 -->
+    <div id="c3" class="content">
+        <img src="ass.jpeg">
+        <p>
+            gua suka pas liat lu salting, gemes de, makanya gua gembel (gombal) terus.
+        </p>
+    </div>
+
+    <!-- CONTENT 4 -->
+    <div id="c4" class="content">
+        <img src="carmen 3.jpg">
+        <p>
+            Gua cuma mau bilang, semoga ade tetep jadi ade yang sekarang, ceria, baik, dan selalu bawa energi positif ke sekitar. Jangan berubah ya, karena itu yang bikin lu spesial.
+
+Terus gua juga pengen ade lebih sering cerita, jangan takut ganggu gua. Gua di sini bukan cuma buat ada, tapi juga buat dengerin semua hal tentang oknum ade sayang ini, sekecil apa pun itu.
+
+Jangan lupa juga buat jaga diri ade baik-baik, jangan terlalu capek, dan jangan dipendem semuanya sendiri. 
+Pokoknya, tetep jadi diri ade yang gua kenal ya, karena ade yang itu udah lebih dari cukup buat gua cik 🤍
+
+        </p>
+    </div>
+     <!-- CONTENT 5 -->
+	<!-- CONTENT 5 -->
+<div id="c5" class="content">
+  <h3>🎶 Lagu Buat Ade 💗</h3>
+<img src="song.png">
+  <p>Mercusuar Show-Jelita</p>
+  <audio id="audioPlayer" controls>
+    <source src="jelita.mpeg" type="audio/mpeg">
+  </audio>
+ <br><br>
+  <p>Lagu ini juga yang gua pake buat post lu di womanday kemaren, makanya jadi keinget lu tiap denger</p>
+</div>
+
+<script>
+function showContent(id) {
+    document.querySelectorAll('.content').forEach(el => {
+        el.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
